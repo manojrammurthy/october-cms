@@ -1,4 +1,4 @@
-<?php namespace Mohsin\Notificaations;
+<?php namespace Manoj\Notificaations;
 
 use Backend;
 use System\Classes\PluginBase;
@@ -22,7 +22,7 @@ class Plugin extends PluginBase
         return [
             'name'        => 'notificaations',
             'description' => 'No description provided yet...',
-            'author'      => 'Mohsin',
+            'author'      => 'Manoj',
             'icon'        => 'icon-leaf'
         ];
     }
@@ -92,7 +92,7 @@ class Plugin extends PluginBase
         return []; // Remove this line to activate
 
         return [
-            'Mohsin\Notificaations\Components\MyComponent' => 'myComponent',
+            'Manoj\Notificaations\Components\MyComponent' => 'myComponent',
         ];
     }
 
@@ -106,7 +106,7 @@ class Plugin extends PluginBase
         return []; // Remove this line to activate
 
         return [
-            'mohsin.notificaations.some_permission' => [
+            'Manoj.notificaations.some_permission' => [
                 'tab' => 'notificaations',
                 'label' => 'Some permission'
             ],
@@ -125,9 +125,9 @@ class Plugin extends PluginBase
         return [
             'notificaations' => [
                 'label'       => 'notificaations',
-                'url'         => Backend::url('mohsin/notificaations/mycontroller'),
+                'url'         => Backend::url('Manoj/notificaations/mycontroller'),
                 'icon'        => 'icon-leaf',
-                'permissions' => ['mohsin.notificaations.*'],
+                'permissions' => ['Manoj.notificaations.*'],
                 'order'       => 500,
             ],
         ];
